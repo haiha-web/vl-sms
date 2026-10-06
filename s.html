@@ -1,0 +1,12 @@
+<!doctype html>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gửi 9969</title>
+<body style="font:20px sans-serif;padding:24px;background:#fff;color:#111">
+<a id="a" style="display:block;padding:20px;background:#d32f2f;color:#fff;border-radius:12px;text-align:center;text-decoration:none">Mở tin nhắn gửi 9969</a>
+<p id="b" style="font-family:monospace"></p>
+<script>
+var body = decodeURIComponent(location.hash.slice(1));
+a.href = "sms:9969?body=" + encodeURIComponent(body);
+b.textContent = body;
+location.href = a.href;   // auto-open; the button is the fallback if the in-app browser blocks it
+</script>
